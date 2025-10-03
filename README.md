@@ -1,16 +1,35 @@
-# React + Vite
+# Spotify Music App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React web app that allows users to search for tracks, view top hits, and manage their favorite songs using the Spotify API.  
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search for tracks by name or artist.  
+- Display top hits by default.  
+- Add and remove favorite tracks, stored locally.  
+- Responsive design for desktop and mobile.  
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (with hooks and context API)  
+- Spotify Web API  
+- CSS Grid & Flexbox  
+- LocalStorage for favorites  
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:  
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+
+
+Install dependencies: npm install
+
+Create a .env file in the project root with your Spotify credentials:
+REACT_APP_SPOTIFY_CLIENT_ID=your_client_id
+REACT_APP_SPOTIFY_CLIENT_SECRET=your_client_secret
+
+
+npm start
+
